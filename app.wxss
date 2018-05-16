@@ -1,0 +1,7 @@
+@import './style/weui.wxss';
+
+/* 公共组件 */
+@import "./component/menu/menu.wxss";
+.hide {
+  opacity: 0;
+}

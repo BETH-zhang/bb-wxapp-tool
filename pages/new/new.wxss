@@ -1,0 +1,15 @@
+.leifengwang {
+  height: 40px;
+  padding: 20rpx;
+  color: #606060;
+  line-height: 40px;
+  border: 1px solid #E6E6E6;
+}
+
+.leifengwang-logo {
+  display: inline-block;
+  float: left;
+  margin-right: 20rpx;
+  width: 136px;
+  height: 40px;
+}

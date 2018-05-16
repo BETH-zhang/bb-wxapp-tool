@@ -1,0 +1,28 @@
+<view class="page-body">
+  <view class="page-body-wrapper">
+    <camera class='camera' device-position="back" flash="auto">
+      <cover-view>
+        <cover-view class='main-tiips'>
+          <open-data type="userNickName"></open-data>正在拍照
+        </cover-view>
+        <cover-image class='verifycode-cover' src="../../../images/cm-mask.png"></cover-image>
+        <cover-image class='red-point' src="../../../images/hd.png" bindtap='takePhoto'></cover-image>
+      </cover-view>
+    </camera>
+     <view class="btn-area">
+      <button type="primary" bindtap="takePhoto">拍照</button>
+    </view>
+    <view class="btn-area">
+      <button type="primary" bindtap="startRecord">开始录像</button>
+    </view>
+    <view class="btn-area">
+      <button type="primary" bindtap="stopRecord">结束录像</button>
+    </view>
+    <view class="preview-tips">预览</view>
+    <view wx:if="{{src}}" class='camera-photo'>
+      <image class='photo-1' wx:if="{{src}}" mode="widthFix" src="{{src}}"></image>
+      <image class='photo-2' src="../../../images/cm-mask.png"></image>
+    </view>
+    <video wx:if="{{videoSrc}}" class="video" src="{{videoSrc}}"></video> 
+  </view>
+</view>

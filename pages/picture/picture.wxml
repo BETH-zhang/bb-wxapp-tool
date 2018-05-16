@@ -1,0 +1,51 @@
+<import src="../../component/menu/menu.wxml" />
+<template is="menuPannel" data="{{ ...__menu__ }}"/>
+<view class='picture'>
+  <view class='leifengwang'>
+    <image class='leifengwang-logo' src="../../images/tuitang/logo.png"></image>
+  </view>
+  <view wx:if="{{isLoading}}" class="weui-loadmore">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+
+  <view wx:else class="content">
+    <view class="left">
+      <block wx:for="{{list}}" wx:key="">
+        <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+      </block>
+    </view>
+    <view class="right">
+      <block wx:for="{{list}}" wx:key="">
+        <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+      </block>
+    </view>
+    <view class='clear'></view>
+  </view>
+
+</view>
+
+<!--  下面是一个模块 -->
+<template name="item">
+  <view class="weui-media-box">
+    <image class="item-img" src="{{fileOptions[0].url}}" mode="widthFix"></image>
+    <view>
+      <view class="weui-media-box__title">{{albumTitle}}</view>
+      <view class="weui-media-box__desc">{{posterScreenName}}</view>
+      <view class="weui-media-box__desc">{{publishDateStr}}</view>
+    </view>
+  <!-- <view class="item-title-box">
+      <navigator url="url" class="item-title">{{title}}</navigator> 
+      <image class="arrow" src="../../image/arrow.png"></image>  
+    </view>
+    <view class="name">
+      <image class="item-ava" src="{{avatar}}"></image>    
+      <text class="name-title">{{name}}</text>
+      <view class="heart_">
+        <image class="heart" src="../../image/heart.png"></image>
+        <text>{{heart_num}}</text>
+      </view>
+    </view> -->
+  </view>
+
+</template>

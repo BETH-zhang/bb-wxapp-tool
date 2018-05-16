@@ -1,0 +1,32 @@
+<!--pages/video/video.wxml-->
+<import src="../../component/menu/menu.wxml" />
+<template is="menuPannel" data="{{ ...__menu__ }}"/>
+<view class='douyin-container'>
+  <view class='douyin'>
+    <image class='douyin-logo' src="../../images/douyin/logo.png"></image>
+    <image class='douyin-slogan' src="../../images/douyin/slogan.png"></image>
+  </view>
+
+<view class="section tc">
+  <video src="{{src}}" controls ></video>
+  <video src="{{src1}}" controls ></video>
+  <!-- <view class="btn-area">
+    <button bindtap="bindButtonTap">获取视频</button>
+    <input bindblur="bindInputBlur"/>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+  </view> -->
+</view>
+
+  <view
+    class='list'
+    wx:for="{{list}}"
+    wx:for-index="id"
+    wx:key="id"
+    wx:for-item="item"
+  >
+    <video id="myVideo" src="{{item.videoUrls[0]}}" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+    <view class='title'>{{item.title}}</view>
+  </view>
+
+  <view class='clear'></view>
+</view>

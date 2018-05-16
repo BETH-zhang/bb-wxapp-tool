@@ -1,0 +1,42 @@
+<import src="../../component/menu/menu.wxml" />
+<template is="menuPannel" data="{{ ...__menu__ }}"/>
+<view class='leifengwang'>
+  <image class='leifengwang-logo' src="../../images/leifengwang/lph-headerlogo.png"></image>读懂智能&未来
+</view>
+<view wx:if="{{isLoading}}" class="weui-loadmore">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+</view>
+<swiper wx:if="{{imgUrls.length}}" indicator-dots="{{indicatorDots}}"  
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item> 
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>   
+        <!-- <navigator url="{{item.link}}" hover-class="navigator-hover">  
+        </navigator>    -->
+    </swiper-item>  
+  </block>  
+</swiper> 
+<view
+  class="weui-panel__bd"
+  wx:for="{{list}}"
+  wx:for-index="id"
+  wx:key="id"
+  wx:for-item="item"
+>
+    <view data-index="{{id}}" bindtap='queryItemClick' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="{{item.imageUrls[0]}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">{{item.title}}</view>
+            <view class="weui-media-box__desc">{{item.posterScreenName}}</view>
+            <view class="weui-media-box__desc">{{item.publishDateStr}}</view>
+        </view>
+    </view>
+    <view
+      wx:if="{{index === id}}"
+      class="weui-box__desc"
+    >
+    </view>
+</view>

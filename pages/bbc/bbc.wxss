@@ -1,0 +1,8 @@
+/* pages/bbc/bbc.wxss */
+.weui-box__desc {
+  padding: 0 40rpx;
+}
+
+.weui-article__h1 {
+  color: #3a60a0;
+}

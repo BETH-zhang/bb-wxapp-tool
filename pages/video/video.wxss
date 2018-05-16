@@ -1,0 +1,47 @@
+/* pages/video/video.wxss */
+.douyin-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #000000;
+}
+
+.douyin {
+  padding: 0 20rpx;
+  border-bottom: 1px solid #252525;
+}
+
+.list {
+  margin-left: 1px;
+  margin-bottom: 20rpx;
+  width: 49%;
+  float: left;
+  color: #ffffff;
+  border: 1px solid #252525;
+}
+
+.list .title {
+  padding: 0 20rpx;
+}
+
+.clear {
+  clear: both;
+}
+
+video {
+  width: 100%;
+}
+
+.douyin-logo {
+  float: left;
+  width: 99px;
+  height: 43px;
+}
+
+.douyin-slogan {
+  clear: both;
+  margin-top: 15px;
+  margin-left: 20rpx;
+  margin-bottom: 15px; 
+  width: 138px;
+  height: 22px;
+}

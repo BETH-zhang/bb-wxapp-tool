@@ -1,0 +1,211 @@
+/**app.wxss**/
+.pageContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+} 
+.flex{
+  display: flex;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.flex-col{
+  flex-direction: column;
+}
+
+/*head   search*/
+.pageContainer .search{
+  width: 737rpx;
+  height: 65rpx;
+  padding: 12.5rpx 0 12.5rpx 15rpx;
+  background: #4bbc93;
+}
+.pageContainer .search-left{
+  flex: 15;
+  background: #52CC9F;
+  text-align: left;
+}
+.pageContainer .search-left input{
+  display: inline-block;
+  height: 65rpx;
+  color:#FFF;
+  font-size: 26rpx;
+}
+.search-placeholder{
+  color: #FFF;
+  line-height: 26rpx;
+  padding-top: 5rpx;
+}
+.pageContainer .search .search-left image{
+  display: inline-block;
+  width: 35rpx;
+  height: 35rpx;
+  padding: 15rpx 15rpx 15rpx 20rpx;
+}
+.pageContainer .search .search-right{
+  flex: 2;
+  margin-left:20rpx;
+}
+.pageContainer .search .search-right image{
+  width: 35rpx;
+  height: 35rpx;
+  padding: 15rpx;
+}
+/*ad*/
+.ad ,.course-grp-item{
+  width:700rpx;
+  margin:20rpx 0;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.ad navigator:first-child image{
+  width:700rpx;
+  height: 160rpx;
+}
+.ad image,.course-grp-item image{
+  margin-top: 10rpx;
+  width:335rpx;
+  height: 160rpx;
+}
+
+/**index.wxss**/
+.container{
+  height: 500rpx;
+  display: flex;
+}
+
+.pageContainer{
+  font-size: 14rpx;
+  color: #000;
+}
+
+/*banner*/
+.bannerbox{
+  height: 400rpx;
+  width:750rpx;
+  position: relative;
+}
+.banner{
+  flex-direction:row;
+  align-items:center;
+}
+.bannerimg{
+  width:750rpx;
+  height: 400rpx;
+  display: none;
+}
+.banner .active{
+  width:750rpx;
+  height: 400rpx;
+  display: inline-block;
+}
+.banner-btn{
+  width:100%;
+  position: absolute;
+  bottom:20rpx;
+  flex-direction:row;
+  justify-content:center;
+}
+.banner-btn view{
+  width:20rpx;
+  height: 20rpx;
+  margin: 10rpx;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 50%;
+}
+.banner-btn  .active{
+  background-color: #FFF;
+}
+
+/*nav*/
+.nav{
+ flex-wrap:wrap;
+ justify-content:center;
+}
+.nav-item{
+  margin: 30rpx 50rpx 10rpx;
+  width:80rpx;
+}
+.nav-item image{
+  width:80rpx;
+  height: 80rpx;
+  border-radius:50%;
+}
+.nav-item text{
+  width:80rpx;
+  font-size: 16rpx;
+  color:#000;
+  display: inline-block;
+  text-align: center;
+}
+
+
+/* pages/course/course.wxss */
+.courses{
+  width:750rpx;
+  height: 1050rpx;
+  justify-content: space-around;
+}
+/*left*/
+.courses-left{
+    width:25%;
+    padding-top: 20rpx;
+    background-color: rgba(217,217,217,0.3);
+}
+.courses-left view{
+    box-sizing: border-box;
+    width:100%;
+    display: block;
+    line-height: 60rpx;
+    font-size: 24rpx;
+    padding-left: 5rpx;
+}
+.courses-left text{
+    padding-left: 15rpx;
+}
+.active{
+    /* background:url("../../images/yunketang/section_title_tip.png") left no-repeat; */
+    background-size: 5rpx 60rpx;
+}
+.active text{
+    display: block;
+    background-color: #FFF;
+}
+/*right*/
+.courses-right{
+    width:75%;
+    box-sizing: border-box;
+    padding:20rpx 5% 0 5%;
+}
+.rcmd-course navigator{
+    width:100%;
+}
+.rcmd-course image{
+    width:100%;
+    height: 160rpx;
+}
+.couList{
+    font-size: 24rpx;
+    line-height: 48rpx;
+    padding-top: 30rpx;
+}
+.couList text{
+    display: block;
+    color:#000;
+}
+.couList navigator{
+    color:#999;
+    display: inline-block;
+    padding-right: 50rpx;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+/* 在使用的Wxss中引入WxParse.css,可以在app.wxss */
+@import "/wxParse/wxParse.wxss";
+
+.leifengwang {
+  height: 40px;
+  padding: 20rpx;
+  color: #606060;
+  line-height: 40px;
+  border: 1px solid #E6E6E6;
+}
+
+.leifengwang-logo {
+  display: inline-block;
+  float: left;
+  margin-right: 20rpx;
+  width: 136px;
+  height: 40px;
+}
+
+.leifengwang-article {
+  overflow: hidden;
+  padding: 20rpx;
+}
+
+.web-view {
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.weui-article__h1,
+.weui-article__title {
+  /* margin: 10rpx; */
+}
+
+.weui-article_avatar {
+  display: inline-block;
+  float: left;
+  margin-right: 20rpx;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.weui-media-box__desc {
+  line-height: 35px;
+}

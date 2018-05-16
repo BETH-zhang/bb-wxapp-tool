@@ -1,0 +1,2 @@
+<!-- canvas.wxml -->
+<canvas class="canvas-box" canvas-id="firstCanvas"></canvas>

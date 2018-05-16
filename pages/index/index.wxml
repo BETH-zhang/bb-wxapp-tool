@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <view bindtap='bindViewTap' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <view class="weui-media-box__thumb">
+            <open-data type="userAvatarUrl"></open-data>
+          </view>
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">
+            <open-data type="userNickName"></open-data>
+          </view>
+          <view class="weui-media-box__desc">
+            <text class="user-motto">{{motto}}</text>
+          </view>
+      </view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-grids">
+        <block
+          wx:for="{{grids}}"
+          wx:for-index="id"
+          wx:key="*this"
+          wx:item="item"
+        >
+            <navigator url="{{item.url}}" open-type="{{item.openType}}" class="weui-grid" hover-class="weui-grid_active">
+                <image class="weui-grid__icon" src="../../index/images/icon_tabbar.png" />
+                <view class="weui-grid__label">{{item.name}}</view>
+            </navigator>
+        </block>
+    </view>
+  </view>
+</view>

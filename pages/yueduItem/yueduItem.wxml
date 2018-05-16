@@ -1,0 +1,18 @@
+<!--引入towxml模版入口文件，并使用模版-->
+<import src="../../component/menu/menu.wxml" />
+<template is="menuPannel" data="{{ ...__menu__ }}"/>
+
+<!-- <import src="../../towxml/entry.wxml" /> -->
+<import src="../../wxParse/wxParse.wxml"/>
+
+<view class="weui-panel__hd">月度读书小组</view>
+<view wx:if="{{isLoading}}" class='weui-loading'></view>
+<view class="weui-article__h1">{{content.title}}</view>
+<view class="weui-article__title">
+  <image class='weui-article_avatar' src="{{content.user.avatar_url}}" />
+  <view class="weui-media-box__desc">{{content.user.login}}.发表于{{content.updated_at}}</view>
+</view>
+<view class="weui-box__desc">
+    <!-- <template is="entry" data="{{...content.article}}"/>  -->
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/> 
+</view>

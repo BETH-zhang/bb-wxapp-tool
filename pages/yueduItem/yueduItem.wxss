@@ -1,0 +1,50 @@
+/* 在使用的Wxss中引入WxParse.css,可以在app.wxss */
+@import "/wxParse/wxParse.wxss";
+
+.weui-loading {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  display: block;
+  vertical-align: middle;
+  animation: a 1s steps(12) infinite;
+  background-size: 100%;
+  background-image: '../../images/loading.png';
+}
+
+@keyframes a {
+  0% {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  }
+  to {
+  -webkit-transform: rotate(1turn);
+  transform: rotate(1turn);
+  }
+}
+
+.weui-box__desc {
+  margin: 10rpx;
+  padding: 20rpx;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.weui-article__h1,
+.weui-article__title {
+  margin: 10rpx 20rpx;
+}
+
+.weui-article_avatar {
+  display: inline-block;
+  float: left;
+  margin-right: 20rpx;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.weui-media-box__desc {
+  line-height: 35px;
+}

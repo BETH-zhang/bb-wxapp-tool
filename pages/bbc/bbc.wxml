@@ -1,0 +1,27 @@
+<import src="../../component/menu/menu.wxml" />
+<template is="menuPannel" data="{{ ...__menu__ }}"/>
+<view
+  class="weui-panel__bd"
+  wx:for="{{list}}"
+  wx:for-index="id"
+  wx:key="id"
+  wx:for-item="item"
+>
+    <view data-index="{{id}}" bindtap='queryItemClick' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="../../images/bbc/logo.png" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">{{item.title}}</view>
+            <view class="weui-media-box__desc">{{item.tags}}</view>
+            <view class="weui-media-box__desc">{{item.publishDateStr}}</view>
+        </view>
+    </view>
+    <view
+      wx:if="{{index === id}}"
+      class="weui-box__desc"
+    >
+      <view class='weui-article__h1'>{{item.title}}</view>
+      {{item.content}}
+    </view>
+</view>

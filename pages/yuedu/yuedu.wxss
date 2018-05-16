@@ -1,0 +1,34 @@
+/**基础风格样式**/
+@import '/towxml/style/main.wxss';
+/**主题配色（深色样式）**/
+@import '/towxml/style/theme/dark.wxss';
+
+.weui-loading {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  display: block;
+  vertical-align: middle;
+  animation: a 1s steps(12) infinite;
+  background-size: 100%;
+  background-image: '../../images/loading.png';
+}
+
+@keyframes a {
+  0% {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  }
+  to {
+  -webkit-transform: rotate(1turn);
+  transform: rotate(1turn);
+  }
+}
+
+.weui-box__desc {
+  margin: 10rpx;
+  padding: 20rpx;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+}

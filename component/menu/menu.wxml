@@ -1,0 +1,16 @@
+<template name="menuPannel">
+  <view class='menu-pannel'>
+    <view wx:if="{{!isHide}}" class='mask'></view>
+    <image bindtap='__menu_show' class='menu-icon' src="../../index/images/icon_nav_nav.png"></image>
+    <view wx:if="{{!isHide}}" class="page__bd">
+      <view class="weui-grids">
+          <block wx:for="{{grids}}" wx:key="*this" wx:item="item">
+              <navigator url="{{item.url}}" open-type="{{item.openType}}" class="weui-grid" hover-class="weui-grid_active">
+                  <image class="weui-grid__icon" src="../../index/images/icon_tabbar.png" />
+                  <view class="weui-grid__label">{{item.name}}</view>
+              </navigator>
+          </block>
+      </view>
+    </view> 
+  </view>
+</template>

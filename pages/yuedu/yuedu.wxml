@@ -1,0 +1,26 @@
+<!--引入towxml模版入口文件，并使用模版-->
+<import src="../../towxml/entry.wxml" />
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd">月度读书小组</view>
+  <view wx:if="{{isLoading}}" class='weui-loading'></view>
+  <view wx:else>
+    <view
+      class="weui-panel__bd"
+      wx:for="{{list}}"
+      wx:for-index="id"
+      wx:key="id"
+      wx:for-item="item"
+    >
+        <view data-number="{{item.number}}" bindtap='queryItemClick' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                <image class="weui-media-box__thumb" src="{{item.user.avatar_url}}" />
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">{{item.title}}</view>
+                <view class="weui-media-box__desc">{{item.updated_at}}</view>
+                <view class="weui-media-box__desc">{{item.user.login}}</view>
+            </view>
+        </view>
+    </view>
+  </view>
+</view>

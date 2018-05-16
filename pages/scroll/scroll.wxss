@@ -1,0 +1,15 @@
+/* pages/scroll/scroll.wxss */
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10rpx;
+  background: #fff;
+  z-index: 1;
+}
+
+.content-item {
+  margin: 30rpx;
+  padding: 30rpx;
+  border: 1px solid #ccc;
+}

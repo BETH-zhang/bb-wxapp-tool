@@ -1,0 +1,19 @@
+<import src="../../component/menu/menu.wxml" />
+<import src="../../wxParse/wxParse.wxml"/>
+<template is="menuPannel" data="{{ ...__menu__ }}"/>
+
+<view class='leifengwang'>
+  <image class='leifengwang-logo' src="../../images/leifengwang/lph-headerlogo.png"></image>读懂智能&未来
+</view>
+<view wx:if="{{isLoading}}" class="weui-loadmore">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+</view>
+<view class="leifengwang-article">
+  <view class="weui-article__h1">{{content.title}}</view>
+  <view class="weui-article__title">
+    <view class="weui-media-box__desc">{{content.posterScreenName}}.发表于{{content.publishDateStr}}</view>    
+</view>
+   <template is="wxParse" data="{{wxParseData:article.nodes}}"/> 
+   <!-- <web-view src="https://baidu.com"></web-view>  -->
+</view>

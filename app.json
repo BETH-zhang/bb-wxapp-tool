@@ -1,0 +1,90 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/courses/courses",
+    "pages/course/course",
+    "pages/mystudy/mystudy",
+    "pages/scroll/scroll",
+    "pages/animation/animation",
+    "index/api/camera/camera",
+    "index/api/canvas/canvas",
+    "index/api/api",
+    "index/index",
+    "pages/picture/picture",
+    "pages/video/video",
+    "pages/bbc/bbc",
+    "pages/music/music",
+    "pages/yueduItem/yueduItem",
+    "pages/yuedu/yuedu",
+    "pages/newItem/newItem",
+    "pages/new/new",
+    "pages/logs/logs",
+    "index/button/button",
+    "index/list/list",
+    "index/input/input",
+    "index/slider/slider",
+    "index/uploader/uploader",
+    "index/article/article",
+    "index/badge/badge",
+    "index/flex/flex",
+    "index/footer/footer",
+    "index/gallery/gallery",
+    "index/grid/grid",
+    "index/icons/icons",
+    "index/loadmore/loadmore",
+    "index/panel/panel",
+    "index/preview/preview",
+    "index/progress/progress",
+    "index/actionsheet/actionsheet",
+    "index/dialog/dialog",
+    "index/msg/msg",
+    "index/picker/picker",
+    "index/toast/toast",
+    "index/navbar/navbar",
+    "index/tabbar/tabbar",
+    "index/searchbar/searchbar",
+    "index/live-player/live-player"
+  ],
+  "window": {
+    "backgroundTextStyle": "#f2f2f2",
+    "navigationBarBackgroundColor": "#03a9f4",
+    "navigationBarTitleText": "BB小程序",
+    "navigationBarTextStyle": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#3a60a0",
+    "backgroundColor": "#03a9f4",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon_index.png",
+        "selectedIconPath": "images/icon_index_hover.png"
+      },
+      {
+        "pagePath": "pages/yuedu/yuedu",
+        "text": "月度",
+        "iconPath": "images/icon_me.png",
+        "selectedIconPath": "images/icon_me_hover.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "images/icon_vip.png",
+        "selectedIconPath": "images/icon_vip_hover.png"
+      },
+      {
+        "pagePath": "index/index",
+        "text": "UI",
+        "iconPath": "images/icon_me.png",
+        "selectedIconPath": "images/icon_me_hover.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

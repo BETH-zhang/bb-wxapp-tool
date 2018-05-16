@@ -1,0 +1,18 @@
+<!--pages/scroll/scroll.wxml-->
+<text>pages/scroll/scroll.wxml</text>
+<!-- 
+1、动态改变它的 scroll-top
+2、scroll-into-view 滚动到某个ID的位置 -->
+<view>
+  <view class='menu'>
+    <view class='menu-item' wx:for="{{menu}}" wx:for-index="index" wx:key="index" wx:for-item="item">
+      <view data-index="{{index}}" bindtap="clickMenu">{{item}}</view>
+    </view>
+  </view>
+
+  <scroll-view style="height: 200px;" scroll-top="{{scrollTop}}" scroll-y>
+    <view class='content-item' wx:for="{{content}}" wx:for-index="index" wx:key="index" wx:for-item="item">
+      {{item}}
+    </view>
+  </scroll-view>
+</view>
