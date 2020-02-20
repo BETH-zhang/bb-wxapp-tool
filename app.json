@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/faceScans/index",
+    "pages/idcard/index",
     "pages/index/index",
     "pages/cameraScans/index",
+    "pages/faceScans/index",
     "pages/courses/courses",
     "pages/course/course",
     "pages/mystudy/mystudy",

@@ -1,0 +1,49 @@
+/* pages/idcard/index.wxss */
+ 
+.idcard {
+  text-align: center;
+  margin: 100rpx auto;
+}
+.logo_disabled {
+  /* background: #FADFCB; */
+  background: rgba(255, 173, 118, 0.40);
+}
+ 
+.logo_bg {
+  background: #ffad76;
+}
+ 
+.idcard_front, .idcard_con {
+  height: 370rpx;
+  width: 580rpx;
+}
+ 
+.myCanvas {
+  width: 600rpx;
+  height: 450rpx;
+  visibility: hidden;
+  position: absolute;
+}
+ 
+.judgeCanvas {
+  width: 2px;
+  height: 2px;
+  visibility: hidden;
+}
+ 
+.idcard_front_desc{
+  font-size: 30rpx;
+  color: #666666;
+  margin-top: 20rpx;
+}
+.submit {
+  height: 80rpx;
+  width: 622rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 32rpx;
+  margin: 50rpx auto 40rpx;
+  /* background: #ffad76; */
+}

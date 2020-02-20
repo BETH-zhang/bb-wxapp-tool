@@ -1,0 +1,13 @@
+<view>
+  <view class='idcard'>
+    <image class="idcard_front" catchtap='uploadImageFront' src="{{idCardUrlFront}}"></image>
+    <view class='idcard_front_desc'>扫描身份证人像面</view>
+  </view>
+ 
+  <view class='idcard'>
+   <image class="idcard_front" catchtap='uploadImageBack' src="{{idCardUrlBack}}"></image>
+    <view class='idcard_front_desc'>扫描身份证国徽面</view>
+  </view>
+ 
+  <view class="submit {{islogo?'logo_bg':'logo_disabled'}}" catchtap='submit'>下一步</view>
+</view>

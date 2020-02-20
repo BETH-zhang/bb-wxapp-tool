@@ -3,6 +3,10 @@ export default {
   kw: '技术',
   pageSize: 10,
   menuData: [{
+    name: '身份证识别',
+    url: '/pages/idcard/index',
+    openType: 'navigate',
+  }, {
     name: '人脸识别',
     url: '/pages/faceScans/index',
     openType: 'navigate',
