@@ -1,6 +1,8 @@
 {
   "pages": [
+    "pages/faceScans/index",
     "pages/index/index",
+    "pages/cameraScans/index",
     "pages/courses/courses",
     "pages/course/course",
     "pages/mystudy/mystudy",
@@ -46,10 +48,10 @@
     "index/live-player/live-player"
   ],
   "window": {
-    "backgroundTextStyle": "#f2f2f2",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#03a9f4",
     "navigationBarTitleText": "BB小程序",
-    "navigationBarTextStyle": "#ffffff"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#ffffff",
@@ -86,5 +88,6 @@
     "request": 10000,
     "downloadFile": 10000
   },
-  "debug": true
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
 }

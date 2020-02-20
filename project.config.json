@@ -13,8 +13,10 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.98",
 	"appid": "wx3e207e53c98d2d8b",
-	"projectname": "weui1",
+	"projectname": "bb-wxapp-tool",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

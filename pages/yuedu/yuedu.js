@@ -26,7 +26,8 @@ Page({
       success: function(res) {
         var list = res.data.map((item) => {
           item.updated_at = util.dateFormat(item.updated_at, 'l');
-          item.article = app.towxml.toJson(item.body, 'markdown');
+          // item.article = app.towxml.toJson(item.body, 'markdown');
+          item.article = item.body
           return item;
         });
         me.setData({ list, isLoading: false });

@@ -3,6 +3,14 @@ export default {
   kw: '技术',
   pageSize: 10,
   menuData: [{
+    name: '人脸识别',
+    url: '/pages/faceScans/index',
+    openType: 'navigate',
+  }, {
+    name: '相机扫描',
+    url: '/pages/cameraScans/index',
+    openType: 'navigate',
+  }, {
     name: '云课堂',
     url: '/pages/courses/courses',
     openType: 'navigate',

@@ -1,0 +1,25 @@
+<import src="../../component/menu/menu.wxml" />
+<view class="scan-view">
+  <view class='scan-border'>
+    
+    <camera
+      class='scan-camera'
+      canvas-id="attendCanvasId"
+      mode="normal"
+      binderror="cameraError"
+      frame-size='medium'
+      bindinitdone="scancode"
+      device-position="front"
+    >
+      <cover-image class='cover-corner cover-left-top' src='/images/left-top.png'></cover-image>
+      <cover-image class='cover-corner cover-right-top' src='/images/right-top.png'></cover-image>
+      <cover-image class='cover-corner cover-left-bottom' src='/images/left-bottom.png'></cover-image>
+      <cover-image class='cover-corner cover-right-bottom' src='/images/right-bottom.png'></cover-image>
+      
+      <cover-view class='scan-animation' animation="{{animation}}"></cover-view>
+    </camera>
+
+    <view>预览</view>
+    <image mode="widthFix" src="{{src}}"></image>
+  </view>
+</view>

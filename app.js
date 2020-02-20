@@ -1,5 +1,5 @@
 import { MenuPannel } from './component/menu/menu.js';
-const Towxml = require('/towxml/main'); //引入towxml库
+const Towxml = require('./towxml/index'); //引入towxml库
 
 App({
   MenuPannel,
@@ -10,7 +10,7 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
   },
-  towxml: new Towxml(),
+  // towxml: new Towxml(),
   getUserInfo: function (cb) {
     var that = this;
     if (this.globalData.userInfo) {

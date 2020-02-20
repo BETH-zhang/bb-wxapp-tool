@@ -21,7 +21,7 @@ Page({
     
     var me = this;
     me.setData({ isLoading: true });
-    var url = 'http://api01.bitspaceman.com:8000/photo/duitang?kw=apple&apikey=YRAmfjRhq2AI5EYQpSKAdCQgJvXzkDdEKF5orvnJAFBtMNzdTziWuGO7J0ctGJta';
+    var url = 'http://api01.bitspaceman.com:8000/photo/duitang?kw=头像&apikey=YRAmfjRhq2AI5EYQpSKAdCQgJvXzkDdEKF5orvnJAFBtMNzdTziWuGO7J0ctGJta';
     util.get({
       url,
       success: function(res) {

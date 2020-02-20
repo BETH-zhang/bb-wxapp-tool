@@ -1,0 +1,16 @@
+<import src="../../component/menu/menu.wxml" />
+<view class="scan-view">
+  <view class='scan-border'>
+    
+    <camera class='scan-camera' canvas-id="attendCanvasId" mode="scanCode" binderror="cameraError" bindscancode='scancode' frame-size='large'>
+      <cover-image class='cover-corner cover-left-top' src='/images/left-top.png'></cover-image>
+      <cover-image class='cover-corner cover-right-top' src='/images/right-top.png'></cover-image>
+      <cover-image class='cover-corner cover-left-bottom' src='/images/left-bottom.png'></cover-image>
+      <cover-image class='cover-corner cover-right-bottom' src='/images/right-bottom.png'></cover-image>
+      
+      <cover-view class='scan-animation' animation="{{animation}}"></cover-view>
+    </camera>
+    <!-- 这里可以处理其他内容 -->
+    <image src="{{attendSuccessImg}}"></image>
+  </view>
+</view>
